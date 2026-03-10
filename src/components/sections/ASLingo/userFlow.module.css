@@ -1,0 +1,294 @@
+.userFlowSection{
+    position: relative;
+    
+    height: 130vh;
+    background-image: url("@/assets/ASLingo/userFlow/background.png");
+    background-size: cover;
+}
+
+.flag{
+
+  position: absolute;
+  top: 14%;
+  left: 13%;
+  max-width: 18vh;
+  max-height: 18vh;
+
+}
+
+.onbording{
+
+  position: absolute;
+  top: 50%;
+  left: 9.5%;
+  max-width: 18vh;
+  max-height: 18vh;
+
+}
+
+.sign{
+
+  position: absolute;
+  top: 48%;
+  left: 37%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.login{
+
+  position: absolute;
+  top: 35%;
+  left: 34%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+.forget{
+
+  position: absolute;
+  top: 24%;
+  left: 37%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+.stairs{
+
+  position: absolute;
+  top: 51%;
+  left: 22%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.home{
+
+  position: absolute;
+  top: 38%;
+  left: 55%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.vector1{
+
+  position: absolute;
+  top: 28%;
+  left: 56%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.vector2{
+
+  position: absolute;
+  top: 30%;
+  left: 61%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.vector3{
+
+  position: absolute;
+  top: 40%;
+  left: 63%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.vector4{
+
+  position: absolute;
+  top: 49%;
+  left: 62%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.vector5{
+
+  position: absolute;
+  top: 53%;
+  left: 59%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+.vector6{
+
+  position: absolute;
+  top: 53%;
+  left: 52%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.diccionary{
+
+  position: absolute;
+  top: 14%;
+  left: 54%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.word{
+
+  position: absolute;
+  top: 5%;
+  left: 47%;
+  max-width: 22vh;
+  max-height: 13vh;
+
+}
+
+.progress{
+
+  position: absolute;
+  top: 16%;
+  right: 28%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+.review{
+
+  position: absolute;
+  top: 4%;
+  right: 21%;
+  max-width: 26vh;
+  max-height: 14vh;
+
+}
+
+
+.settings{
+
+  position: absolute;
+  top: 32%;
+  right: 24%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+
+.edit{
+
+  position: absolute;
+  top: 34%;
+  right: 13%;
+  max-width: 26vh;
+  max-height: 14vh;
+
+}
+
+
+.lesson{
+
+  position: absolute;
+  top: 48%;
+  right: 21%;
+  max-width: 26vh;
+  max-height: 18vh;
+
+}
+
+
+.result{
+
+  position: absolute;
+  top: 60%;
+  right: 15%;
+  max-width: 26vh;
+  max-height: 14vh;
+}
+
+.community{
+
+  position: absolute;
+  top: 62%;
+  right: 32%;
+  max-width: 26vh;
+  max-height: 18vh;
+}
+
+.messageUserFlow{
+
+  position: absolute;
+  top: 60%;
+  right: 43%;
+  max-width: 26vh;
+  max-height: 18vh;
+}
+
+.chat{
+
+  position: absolute;
+  top: 78%;
+  right: 52%;
+  max-width: 26vh;
+  max-height: 14vh;
+}
+
+.arrow{
+
+  position: absolute;
+  top: 66%;
+  left: 41%;
+  max-width: 30vh;
+  max-height: 26vh;
+}
+
+.arrow2{
+
+  position: absolute;
+  top: 51%;
+  right: 16%;
+  max-width: 30vh;
+  max-height: 26vh;
+  rotate: -80deg;
+}
+
+
+.arrow3{
+
+  position: absolute;
+  top: 31%;
+  right: 16%;
+  max-width: 30vh;
+  max-height: 26vh;
+  rotate: -110deg;
+}
+
+.arrow4{
+
+  position: absolute;
+  top: 8%;
+  right: 21.5%;
+  max-width: 30vh;
+  max-height: 26vh;
+  rotate: -160deg;
+}
+
+.arrow5{
+
+  position: absolute;
+  top: 7.5%;
+  left: 48%;
+  max-width: 30vh;
+  max-height: 26vh;
+  rotate: -240deg;
+}

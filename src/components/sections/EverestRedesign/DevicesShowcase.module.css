@@ -1,0 +1,81 @@
+.DevicesShowcaseSection {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.LaptopImg{
+
+  position: absolute;
+  top: 26%;
+  left: 40%;
+  max-width: 60vh;
+  z-index: 30;
+}
+
+.IphoneRedImg{
+
+  position: absolute;
+  top: 18%;
+  right: 15%;
+  max-width: 80vh;
+  z-index: 30;
+}
+
+.IphoneBlueImg{
+
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  max-width: 80vh;
+  z-index: 30;
+}
+
+.blobWrapper {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.blobLeft {
+  z-index: 10;
+  padding-top: 3rem;
+}
+
+.blobCenter {
+  z-index: 20;
+  padding-bottom: 1rem;
+}
+
+.blobRight {
+  z-index: 10;
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    gap: 6rem;
+  }
+}

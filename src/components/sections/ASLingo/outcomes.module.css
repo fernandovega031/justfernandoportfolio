@@ -1,0 +1,43 @@
+.outcomesSection{
+    position: relative;
+    height: 130vh;
+    background-image: url("@/assets/ASLingo/outcomes/background.png");
+    background-size: cover;
+}
+
+
+.outcomeTitle{
+
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  max-width: 90vh;
+
+}
+
+.slide1{
+
+  position: absolute;
+  top: 5%;
+  right:25%;
+  max-height: 65vh;
+
+}
+
+.slide2{
+
+  position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+
+}
+
+.slide3{
+
+  position: absolute;
+  top: 60%;
+  right:27%;
+  max-height: 45vh;
+
+}

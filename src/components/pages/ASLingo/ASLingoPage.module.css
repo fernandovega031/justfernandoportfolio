@@ -1,0 +1,429 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visualDesignSection{
+    position: relative;
+    height: 380vh;
+    background-image: url("../../../assets/ASLingo/visualDesign/background.png");
+    background-size: cover;
+}
+
+.folder{
+
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  max-width: 100vh;
+}
+
+.visual1{
+
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  min-width: 25vh;
+  min-height: 25vh;
+}
+
+.visual2{
+
+  position: absolute;
+  top: 2%;
+  left: 22%;
+  min-width: 25vh;
+  min-height: 25vh;
+}
+
+.visual3{
+
+  position: absolute;
+  top: 1%;
+  left: 43%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual4{
+
+  position: absolute;
+  top: 2%;
+  left: 64%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual5{
+
+  position: absolute;
+  top: 1%;
+  left: 85%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual6{
+
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual7{
+
+  position: absolute;
+  top: 19%;
+  left: 22%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual8{
+
+  position: absolute;
+  top: 18%;
+  left: 43%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual9{
+
+  position: absolute;
+  top: 19%;
+  left: 64%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual10{
+
+  position: absolute;
+  top: 18%;
+  left: 85%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual11{
+
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual12{
+
+  position: absolute;
+  top: 36%;
+  left: 22%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual13{
+
+  position: absolute;
+  top: 85%;
+  left: 43%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual14{
+
+  position: absolute;
+  top: 36%;
+  left: 64%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual15{
+
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual16{
+
+  position: absolute;
+  top: 52%;
+  left: 5%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual17{
+
+  position: absolute;
+  top: 53%;
+  left: 22%;
+    min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual18{
+
+  position: absolute;
+  top: 52%;
+  left: 43%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual19{
+
+  position: absolute;
+  top: 53%;
+  left: 64%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual20{
+
+  position: absolute;
+  top: 52%;
+  left: 85%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual21{
+
+  position: absolute;
+  top: 69%;
+  left: 5%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual22{
+
+  position: absolute;
+  top: 70%;
+  left: 22%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual23{
+
+  position: absolute;
+  top: 69%;
+  left: 43%;
+    min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual24{
+
+  position: absolute;
+  top: 70%;
+  left: 64%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual25{
+
+  position: absolute;
+  top: 69%;
+  left: 85%;
+   min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual26{
+
+  position: absolute;
+  top: 85%;
+  left: 22%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+.visual27{
+
+  position: absolute;
+  top: 85%;
+  left: 64%;
+  min-width: 25vh;
+  min-height: 25vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .slide {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .left {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .phone {
+    width: 260px;
+  }
+}

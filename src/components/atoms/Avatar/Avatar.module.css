@@ -1,0 +1,29 @@
+.Avatar {
+
+    overflow: hidden;
+    object-fit: cover;
+  
+    width: 500px;
+    height: 500px;
+    min-width: 400px;
+    
+    border-radius: 33px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .Avatar {
+      max-width: 400px;
+      min-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Avatar {
+      max-width: 350px;
+      min-width: 250px;
+  }
+}
+

@@ -1,0 +1,27 @@
+.gapSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 300vh;
+  display: flex;
+  justify-content: center;
+}
+
+.IphoneImg{
+
+  position: absolute;
+  top: -20%;
+  left: -24%;
+  max-width: 180vh;
+  z-index: 12;
+
+}

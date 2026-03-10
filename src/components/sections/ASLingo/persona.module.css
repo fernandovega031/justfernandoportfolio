@@ -1,0 +1,182 @@
+
+.personaTitle{
+
+  position: absolute;
+  top: 0%;
+  right: 15%;
+  width: 5%;
+  height: 21%;
+  min-width: 50vh;
+  min-height: 3vh;
+
+}
+
+.guyImg{
+
+  position: absolute;
+  top: 21%;
+  left: 6%;
+
+}
+
+.guyImg2{
+
+  position: absolute;
+  top: 20%;
+  left: 5%;
+
+}
+
+.guyImg3{
+
+  position: absolute;
+  top: 19%;
+  left: 4%;
+
+}
+
+
+.womanImg{
+
+  position: absolute;
+  top: 42%;
+  right: 26%;
+
+}
+
+.womanImg2{
+
+  position: absolute;
+  top: 41%;
+  right: 25%;
+
+}
+
+.womanImg3{
+
+  position: absolute;
+  top: 40%;
+  right: 24%;
+
+}
+
+
+
+.personaSection{
+    position: relative;
+    height: 130vh;
+    background-color: #DBFDFF;
+}
+
+
+.jamesInfo{
+
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  max-width: 450px;
+  background-image: url("../../../assets/ASLingo/persona/window.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem;
+
+}
+
+.jamesLogin{
+
+    position: absolute;
+  top: 35%;
+  left: 27%;
+  max-width: 350px;
+  background-image: url("../../../assets/ASLingo/persona/login.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem;
+
+}
+
+.jamesComment{
+
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  height: 16%;
+  max-width: 280px;
+  background-image: url("../../../assets/ASLingo/persona/comment.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem 2.6rem;
+
+}
+
+
+.emilyInfo{
+
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  max-width: 450px;
+  background-image: url("../../../assets/ASLingo/persona/window.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem;
+
+}
+
+.emilyLogin{
+
+    position: absolute;
+  top: 40%;
+  right: 4%;
+  max-width: 350px;
+  background-image: url("../../../assets/ASLingo/persona/login.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem;
+
+}
+
+.emilyComment{
+
+  position: absolute;
+  top: 26%;
+  right: 30%;
+  height: 16%;
+  max-width: 280px;
+  background-image: url("../../../assets/ASLingo/persona/comment2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem 2.6rem;
+
+}
+
+.jamesComment p,
+.jamesInfo p,
+.jamesLogin p,
+.emilyLogin p,
+.emilyInfo p,
+.emilyComment p{
+
+font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+
+}
+
+.jamesComment span,
+.jamesInfo span,
+.jamesLogin span,
+.emilyLogin span,
+.emilyInfo span,
+.emilyComment span{
+    font-weight: 900;
+  color: #000;
+}

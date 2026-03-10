@@ -1,0 +1,77 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.2rem 3rem;
+  transition: all 0.4s ease;
+
+  background: transparent;
+}
+
+/* Estado cuando haces scroll */
+.scrolled {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.themeBtn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: opacity .2s ease;
+    opacity: 0;
+}
+.themeBtn:hover {
+    background: rgba(0,0,0, 0.07);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+.logo {
+font-size: 22px;
+font-weight: 700;
+}
+
+.logoFV {
+  object-fit: contain;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.nav a {
+margin-left: 24px;
+font-weight: 600;
+color: #333;
+text-decoration: none;
+transition: color .2s ease;
+}
+
+
+.nav a:hover {
+color: #0077ff;
+}

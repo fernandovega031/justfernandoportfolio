@@ -1,0 +1,119 @@
+.wireframeSection{
+
+    position: relative;
+    height: 100vh;
+    background-color: #F6F6F6;
+
+
+}
+
+.wireframeTitle{
+
+
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  max-width: 200vh;
+
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, #f9fafb, #f3f4f6);
+  overflow: hidden;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+
+
+.topGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12rem;
+  background: linear-gradient(to bottom, #f3f4f6, transparent);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* New wrapper for multiple columns */
+.columnsWrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .columnsWrapper {
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.scrollContainer {
+  flex: 1;
+  overflow: hidden;
+  scroll-behavior: auto;
+  min-width: 0; /* Allow flex items to shrink below content size */
+}
+
+.wireframeGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.wireframeCard {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.wireframeCard:hover {
+  transform: scale(1.05);
+}
+
+.cardInner {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.wireframeImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bottomGradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  background: linear-gradient(to top, #f3f4f6, transparent);
+  pointer-events: none;
+  z-index: 10;
+}

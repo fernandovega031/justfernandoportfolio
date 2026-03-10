@@ -1,0 +1,126 @@
+.selectedWorkSection {
+  padding: 6rem 1.5rem;
+  background-color: #f9fafb;
+  height: 40rem;
+}
+
+.titleContainer {
+margin-left: 15rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.titleBar {
+  width: 0.5rem;
+  height: 3rem;
+  background-color: #3b82f6;
+
+}
+
+
+.grid {
+    margin: 6rem 5rem 0 15rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .projectListWrapper {
+    position: static;
+  }
+  .projectCard {
+    left: 0;
+  }
+}
+
+
+.thumbnailImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+.projectListWrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+}
+
+.projectList {
+    padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: flex-end;
+}
+
+.projectCard {
+ 
+  background-color: white;
+  color: #1a1a1a;
+  padding: 1.8rem 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 80%;
+  position: relative;
+  bottom: -5%;
+  left: -33%;
+}
+
+.projectCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #334155;
+    color: white;
+  transform: translateY(-2px);
+}
+
+.projectCard.highlighted {
+  background-color: #1e293b;
+  color: white;
+}
+
+.projectCard.highlighted:hover {
+  background-color: #334155;
+}
+
+.projectName {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.projectIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectIcon {
+
+  transform: translateX(4px);
+}

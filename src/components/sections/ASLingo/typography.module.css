@@ -1,0 +1,43 @@
+
+.typographySection{
+    position: relative;
+    height: 100vh;
+    background-color: #F0E0FF;
+}
+
+.typographyTitle{
+
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  max-width: 70vh;
+
+}
+
+.lorem{
+
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  max-width: 40vh;
+
+}
+
+.font{
+
+  position: absolute;
+  top: 45%;
+  left: 32%;
+  max-width: 50vh;
+
+}
+
+.test{
+
+  position: absolute;
+  top: 13%;
+  right: 0%;
+  max-width: 60vh;
+
+}
+

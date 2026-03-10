@@ -1,0 +1,141 @@
+.ThumbnailSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.laptopImg{
+
+  position: absolute;
+  top: -15%;
+  left: -40%;
+  max-width: 180vh;
+
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  justify-content: center;
+}
+
+.heroTextBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  text-align: center;
+  align-self: center;
+}
+
+.mainTitle {
+
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.bylineSection {
+  padding-top: 1rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bylineText {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bylineAuthor {
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+.descriptionText {
+  margin-top: 1.5rem;
+  max-width: 28rem;
+  font-size: 1.4rem;
+  color: #4b5563;
+  font-weight: 600;
+  line-height: 1.375;
+  text-align: center;
+}
+
+.roleSection {
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+  text-align: left;
+}
+
+.roleLabel {
+
+  font-size: 1.125rem;
+  font-weight:200;
+  color: black;
+  letter-spacing: -0.01em;
+}
+
+.roleTitle {
+  font-size: 3.50rem;
+  font-weight: 900;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .contentWrapper {
+    padding: 5rem 4rem 12rem 4rem;
+  }
+
+  .heroTextBlock {
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 3rem;
+  }
+
+
+  .mainTitle {
+    font-size: 5.625rem;
+  }
+
+  .bylineText {
+    font-size: 1.5rem;
+  }
+
+  .descriptionText {
+    font-size: 1.125rem;
+  }
+
+  .roleSection {
+    right: 4rem;
+  }
+
+  .roleLabel {
+    font-size: 1.25rem;
+  }
+
+
+}

@@ -1,0 +1,210 @@
+.hero {
+  padding: 8rem 1.5rem 6rem;
+}
+
+/* Gradient layer */
+.gradient {
+  position: absolute;
+  top: -40%;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+  z-index: 0;
+
+  background: linear-gradient(
+    120deg,
+    #f7b2ff,
+    #b9ccff,
+    #ffd6a5,
+    #fbc2eb
+  );
+
+  background-size: 300% 300%;
+  filter: blur(60px);
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2rem, 6svw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-wrap: balance;
+}
+
+.underline {
+  display: inline-block;
+  min-width: 220px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
+.tags {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.tags > span {
+  padding: 0.5rem 1rem;
+  border-radius: 0.1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.tags > span:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.tagUi {
+  background-color: #FFD8D2;
+
+}
+
+.tagFrontend {
+  background-color: #BCE5FF;
+
+}
+
+.tagMotion {
+  background-color: #FFBFF1;
+
+}
+
+.tagUx {
+  background-color: #FFE797;
+
+}
+
+.mockupsWrapper {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  /* Added overflow hidden to contain stripes */
+  overflow: hidden;
+}
+
+.mockupsContainer {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Reduced gap between phones */
+  gap: 3rem;
+  position: relative;
+  /* Added padding for better spacing */
+  padding: 3rem 0 0 0;
+}
+
+/* Updated stripe styling for diagonal blue lines */
+.stripe {
+
+background-color: white;
+
+}
+
+
+.stripe1 {
+  position: absolute;
+  width: auto;
+  top: 0%;
+  left: -3%;
+  z-index: 1;
+}
+
+.stripe2 {
+  position: absolute;
+  width: auto;
+  left: 11.3%;
+  bottom: 0%;
+  z-index: 2;
+}
+
+.stripe3 {
+  position: absolute;
+  width: auto;
+  bottom: -17%;
+  left: 45%;
+  z-index: 2;
+}
+
+
+
+/* Simplified phone styling to use images */
+.phone {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.phone:hover {
+  transform: scale(1.05);
+}
+
+.phone:nth-child(2) {
+  width: clamp(4.5rem, 6vw, 7rem);
+}
+
+.phone:nth-child(3) {
+  width: clamp(5.5rem, 8vw, 9rem);
+}
+
+.phone:nth-child(4) {
+  width: clamp(6.5rem, 10vw, 11rem);
+}
+
+.phoneCenter {
+  padding-top: 3rem;
+  width: clamp(8rem, 15vw, 16rem);
+  z-index: 3;
+}
+
+.phone:nth-child(6) {
+  width: clamp(6.5rem, 10vw, 11rem);
+}
+
+.phone:nth-child(7) {
+  width: clamp(5.5rem, 8vw, 9rem);
+}
+
+.phone:nth-child(8) {
+  width: clamp(4.5rem, 6vw, 7rem);
+}
+
+.phoneImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Added filter for hover effect */
+
+}
+
+/* Removed old phone content styles that are no longer needed */
+
+@media (max-width: 768) {
+  .hero {
+    padding: 6rem 1rem 4rem;
+  }
+
+  .stripe {
+    width: 5rem;
+    height: 20rem;
+  }
+
+  .mockupsContainer {
+    gap: 0.25rem;
+  }
+}

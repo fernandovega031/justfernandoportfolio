@@ -1,0 +1,80 @@
+.visualDesignSection{
+    position: relative;
+    height: 280vh;
+    background-image: url("@/assets/ASLingo/visualDesign/background.png");
+    background-size: cover;
+    padding: 6rem 0;
+}
+
+.folder{
+
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    max-width: 100vh;
+}
+
+
+/* Changed wrapper from flex-row to flex-column for horizontal rows */
+.columnsWrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 8rem 1rem 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .columnsWrapper {
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Changed overflow direction from vertical to horizontal */
+.scrollContainer {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  min-height: 0;
+}
+
+/* Changed grid from column to row for horizontal layout */
+.wireframeGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding:3rem 0;
+  width: max-content;
+}
+
+.wireframeCard {
+  position: relative;
+  width: auto;
+  max-width: 28rem;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.wireframeCard:hover {
+  transform: scale(1.05);
+}
+
+.cardInner {
+
+
+  overflow: hidden;
+
+}
+
+.wireframeImage {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+

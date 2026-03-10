@@ -1,0 +1,150 @@
+.targetUserSection {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff 55%, #F4F3F8 55%);
+
+  padding: 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* Grid System */
+.gridLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto ;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+
+}
+
+/* Section Styling */
+.sectionTop {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
+.sectionBottom {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+}
+
+.spacer {
+  width: 100%;
+}
+
+.IphoneImg{
+
+  position: absolute;
+  top: 28%;
+  left: 8%;
+  max-width: 44vh;
+  z-index: 12;
+
+}
+
+.secondSectionText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.GraphicImg{
+
+  position: absolute;
+  top: 37%;
+  left: 38%;
+  max-width: 100vh;
+  z-index: 12;
+
+}
+
+.headingContent{
+      padding-bottom: 18rem;
+
+}
+
+/* Typography */
+.headingDisplay {
+  font-size: 3.5rem;
+  font-weight: 400; /* Regular/Light */
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.headingBold {
+  display: block;
+  font-weight: 500;
+}
+
+.contentBlock {
+  padding-top: 1rem;
+}
+
+.textParagraph {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.textHighlight {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Decorative Arc Position */
+.decorationLayer {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .targetUserSection {
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ffffff 40%, #F5F5F7 40%);
+  }
+  
+  .sectionTop, .sectionBottom {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .headingDisplay {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .decorationLayer {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    height: 200px;
+    margin: 2rem 0;
+  }
+}

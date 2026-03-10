@@ -1,0 +1,106 @@
+.footerSection {
+  background-color: #1f2937;
+  color: white;
+  padding: 4rem 1.5rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.logoWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.location {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.columnTitle {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: white;
+}
+
+.linkIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottomBar {
+  padding-top: 2rem;
+  border-top: 1px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottomLogo {
+  object-fit: contain;
+}
+
+.copyrightText {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.Ico{
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  
+}
+
+.Iconhover:hover{
+  filter: brightness(0) invert(1);
+}

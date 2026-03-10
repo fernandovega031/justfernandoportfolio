@@ -1,0 +1,32 @@
+.preview {
+padding: 60px 80px;
+}
+
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 24px;
+}
+
+
+.card {
+background: #fff;
+padding: 20px;
+border-radius: 16px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row; /* Default to row layout */
+    gap: 20px; /* Add spacing between items */
+  
+      height: auto; /* Remove fixed height */
+  
+      padding: 20px; /* Add breathing room */
+  
+    }

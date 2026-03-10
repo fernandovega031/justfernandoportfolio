@@ -1,0 +1,87 @@
+
+.empathyMapSection{
+    position: relative;
+    height: 130vh;
+    background-color: #DDD8FF;
+}
+
+.empathyTitle{
+
+  position: absolute;
+  top: 8%;
+  right: 0%;
+  height: 20%;
+  min-width: 40vh;
+  min-height: 3vh;
+
+}
+
+.emelyMap{
+
+  position: absolute;
+  top: 18%;
+  left: 10%;
+
+  max-height: 100vh;
+
+}
+
+.jamesMap{
+
+  position: absolute;
+  top: 18%;
+  right: 22%;
+  max-height: 100vh;
+}
+
+
+.emily{
+
+  position: absolute;
+  top: 12%;
+  left: 2%;
+
+}
+
+
+.james{
+
+  position: absolute;
+  top: 12%;
+  right: 42%;
+
+}
+
+
+.cross{
+
+  position: absolute;
+  top: 50%;
+  right: 9%;
+  max-width: 20vh;
+  max-height: 20vh;
+}
+
+
+
+
+.magnify{
+
+  position: absolute;
+  top: 42%;
+  right: 4%;
+  max-width: 14vh;
+  max-height: 14vh;
+
+}
+
+
+.triangle{
+
+  position: absolute;
+  top: 37%;
+  right: 15%;
+  max-width: 10vh;
+  max-height: 10vh;
+
+}

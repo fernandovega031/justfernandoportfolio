@@ -1,0 +1,183 @@
+.lessonSection{
+
+      position: relative;
+    height: 130vh;
+    background-image: url("@/assets/ASLingo/lesson/background.png");
+    background-size: cover;
+}
+
+.frame1{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+
+}
+
+.frame2{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+  
+}
+
+.frame3{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+  
+}
+
+.frame4{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+  
+}
+
+.frame5{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+  
+}
+
+.frame6{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+  
+}
+
+.frame7{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+  
+}
+
+.frame8{
+
+    position: absolute;
+  top: 35%;
+  right: 4%;
+  max-height: 60vh;
+  
+}
+
+
+.lessonTitle{
+
+      position: absolute;
+  top: 2%;
+  left: 4%;
+  max-height: 60vh;
+
+}
+
+.lessonSlide1{
+
+      position: absolute;
+  top: 50%;
+  left: 6%;
+  max-height: 60vh;
+
+}
+
+.lessonSlide2{
+
+      position: absolute;
+  top: 32%;
+  left: 40%;
+  max-height: 60vh;
+
+}
+
+.lessonSlide3{
+
+      position: absolute;
+   top: 50%;
+  right: 6%;
+  max-height: 60vh;
+
+}
+
+.frame1{
+
+        position: absolute;
+   top: 5%;
+  right: 36%;
+  max-height: 60vh;
+
+}
+
+.frame2{
+
+        position: absolute;
+   top: 15%;
+  right: 4%;
+  max-height: 60vh;
+}
+
+.frame3{
+
+  position: absolute;
+   top: 30%;
+  right: 21%;
+  max-height: 60vh;
+}
+
+.frame4{
+
+  position: absolute;
+   top: 30%;
+  left: 5%;
+  max-height: 60vh;
+}
+
+.frame5{
+
+  position: absolute;
+   top: 30%;
+  left: 17%;
+  max-height: 60vh;
+}
+
+.frame6{
+
+  position: absolute;
+   top: 30%;
+  left: 28%;
+  max-height: 60vh;
+}
+
+
+.frame7{
+
+  position: absolute;
+  top: 75%;
+  left: 34%;
+  max-height: 60vh;
+}
+
+.frame8{
+
+  position: absolute;
+  top: 78%;
+  left: 51%;
+  max-height: 60vh;
+
+}
