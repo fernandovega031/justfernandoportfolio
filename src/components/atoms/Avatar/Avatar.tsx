@@ -9,7 +9,7 @@ type AvatarProps = {
 const Avatar: React.FC<AvatarProps> = ({ src, alt }) => {
   return (
     <motion.img
-      variants={{ opacity: 0, x: -50 }}
+      initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 1.0, ease: "easeOut", delay: 0.9 }}

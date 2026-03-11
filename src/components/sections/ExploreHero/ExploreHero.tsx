@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 
 const ExploreHeroSection: React.FC = () => {
 return (
-      <><motion.div
+      <>
+      <motion.div
     className={styles.gradient}
     animate={{
       backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
@@ -18,14 +19,14 @@ return (
       ease: "linear",
     }} />
     
-    <motion.div variants={{ opacity: 0, y: 0 }} // Inicia invisible y desplazado hacia abajo
+    <motion.div initial={{ opacity: 0, y: 0 }} // Inicia invisible y desplazado hacia abajo
       animate={{ opacity: 1, y: 0 }} // Se hace visible y sube
       exit={{ opacity: 0, y: 0 }} // Se desvanece y sube al salir
       transition={{ duration: 0.9, ease: "easeOut" }} // Animación suave
       className={styles.HeroSection}>
 
       <Avatar src={imgsrc} alt="Fernando Vega" />
-      <motion.div variants={{ opacity: 0, y: 50 }} // Inicia invisible y desplazado hacia abajo
+      <motion.div initial={{ opacity: 0, y: 50 }} // Inicia invisible y desplazado hacia abajo
         animate={{ opacity: 1, y: 0 }} // Se hace visible y sube
         exit={{ opacity: 0, y: -50 }} // Se desvanece y sube al salir
         transition={{ duration: 1, ease: "easeOut", delay: .5 }} // Animación suave
