@@ -4,6 +4,8 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: 'https://www.justfernandosportfolio.com',
+  assetsInclude: ['**/*.JPG'],
   plugins: [react()],
   resolve: {
     alias: {
