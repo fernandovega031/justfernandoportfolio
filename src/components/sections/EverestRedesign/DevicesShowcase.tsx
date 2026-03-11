@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-import component from "@/assets/ASLingo/colors/white.png";
+
 import { Blob } from "@/components/atoms/blob/blob";
 import IphoneBlue  from "@/assets/EverestRedesign/IphoneBlueJump2.png";
 import Laptop  from "@/assets/EverestRedesign/LaptopJump2.png";

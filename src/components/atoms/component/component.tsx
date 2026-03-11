@@ -1,5 +1,4 @@
-import styles from "./Component.module.css";
-import { motion } from "framer-motion";
+
 
 type ComponentProps = {
   src: string;

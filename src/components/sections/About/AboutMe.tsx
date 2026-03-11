@@ -1,5 +1,5 @@
 import styles from "./AboutMe.module.css";
-import { motion } from "framer-motion";
+
 import { Link } from "react-router-dom";
 import guy from "@/assets/aboutMe/guy.png";
 import redlines from "@/assets/aboutMe/lineasrojas.svg";

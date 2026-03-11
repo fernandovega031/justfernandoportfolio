@@ -13,7 +13,7 @@ const FadeInSection = ({ children, delay = 0 }: FadeInSectionProps) => {
   return (
     <motion.div
       ref={ref}
-      variantss={{ opacity: 0, y: 60 }}
+      variants={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{
         duration: 0.8,

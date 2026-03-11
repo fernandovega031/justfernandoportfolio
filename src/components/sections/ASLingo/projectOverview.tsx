@@ -31,10 +31,7 @@ const itemVariants = {
   },
 };
 
-interface CardContent {
-  text: string
-  highlights?: { word: string; bold?: boolean }[]
-}
+
 
 interface ProjectCardProps {
   content: string

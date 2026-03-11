@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { motion } from "framer-motion";
+
 import { Link } from 'react-router-dom';
 
 import circularLight from "@/assets/circularLight.png";

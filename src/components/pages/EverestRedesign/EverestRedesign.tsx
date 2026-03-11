@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from "./EverestRedesign.module.css";
 
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Goals from '@/components/sections/EverestRedesign/Goals';
 import keyLearning from '@/components/sections/EverestRedesign/keyLearning';
 import MarvelousSection from '@/components/sections/EverestRedesign/marvelous';

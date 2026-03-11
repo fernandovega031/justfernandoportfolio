@@ -121,7 +121,6 @@ const prev = () => {
         className={styles.logoItem}
         custom={direction}
         variants={slideVariants}
-        variantss="enter"
         animate="center"
         exit="exit"
         transition={{

@@ -3,7 +3,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-import component from "@/assets/ASLingo/colors/white.png";
 import Iphone  from "@/assets/EverestRedesign/IphoneTargetUser.png";
 import Graphic  from "@/assets/EverestRedesign/GraphicDesignTargetUser.png";
 

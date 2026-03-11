@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './DesignSlide.module.css';
 
 export const DesignSlide = () => {
