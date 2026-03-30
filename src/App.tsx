@@ -6,6 +6,7 @@ import ProjectsPage from './components/pages/Projects/ProjectsPage.tsx';
 import ContactPage from './components/pages/Contact/ContactPage.tsx';
 import { motion } from 'framer-motion';
 import { useTheme } from './context/ThemeContext.tsx';
+import ScrollToTop from './context/ScrollToTop.jsx'
 
 import ASLingoPage from './components/pages/ASLingo/ASLingoPage.tsx';
 import EverestRedesign from './components/pages/EverestRedesign/EverestRedesign.tsx';
@@ -32,6 +33,7 @@ return (
     style={{minHeight: '100vh'}}
 >
  <main>
+    <ScrollToTop />
   <Routes>
   <Route path="/" element={<HomePage />} />
   <Route path="/projects" element={<ProjectsPage />} />

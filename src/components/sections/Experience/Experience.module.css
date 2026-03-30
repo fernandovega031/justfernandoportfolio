@@ -1,46 +1,58 @@
+/* ============================================
+   EXPERIENCE SECTION - MOBILE FIRST
+   ============================================ */
+
 .experienceSection {
-  padding: 6rem 1.5rem 2rem 1.5rem;
+  padding: clamp(2rem, 6vw, 6rem) clamp(1rem, 5vw, 1.5rem) clamp(1.5rem, 4vw, 2rem);
   background-color: #f9fafb;
 }
 
 .container {
-
+  max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .titleContainer {
-margin-left: 15rem;
+  margin-left: 1rem;
+
+  margin-bottom: clamp(2rem, 6vw, 4rem);
 }
 
 .title {
-  font-size: 2.25rem;
+  /* Tipografía fluida: 1.5rem en móvil, 2.25rem en desktop */
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 600;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: clamp(0.5rem, 2vw, 1rem);
   letter-spacing: 0.3rem;
 }
 
 .titleBar {
   width: 0.5rem;
-  height: 3rem;
+  /* Altura fluida: 2rem en móvil, 3rem en desktop */
+  height: clamp(2rem, 4vw, 3rem);
   background-color: #3b82f6;
-
+  flex-shrink: 0;
 }
-   
+
 .carouselWrapper {
-    margin: 6rem auto;
+  margin: clamp(3rem, 5vw, 6rem) auto;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: clamp(0.75rem, 2vw, 2rem);
+  width: 100%;
+  overflow: visible;
 }
 
 .arrowButton {
-  width: 3rem;
-  height: 3rem;
+  width: clamp(2rem, 8vw, 3rem);
+  height: clamp(2rem, 8vw, 3rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,11 +60,24 @@ margin-left: 15rem;
   border: none;
   border-radius: 9999px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  
+  /* Accesibilidad: target mínimo 44px en touch */
+  min-width: 44px;
+  min-height: 44px;
+  
+  /* Padding adicional para mejorar área de toque */
+  padding: 0.5rem;
 }
 
 .arrowButton:hover {
   background-color: #e5e7eb;
+}
+
+.arrowButton:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
 .arrowRight {
@@ -61,16 +86,19 @@ margin-left: 15rem;
 
 .arrowImage {
   object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .carouselContent {
   display: flex;
-    overflow: hidden;
+  overflow: hidden;
   align-items: center;
   justify-content: space-around;
-  gap: 6rem;
+  gap: clamp(1rem, 3vw, 6rem);
   flex: 1;
-  overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .logoItem {
@@ -78,29 +106,54 @@ margin-left: 15rem;
   align-items: center;
   justify-content: center;
   filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+  
+  /* Mejora accesibilidad en touch */
+  min-width: 60px;
 }
 
 .logoItem:hover {
   filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 .logoImage {
   object-fit: contain;
-  max-height: 5rem;
+
+  max-height: clamp(2.5rem, 36vw, 5rem);
+  max-width: clamp(60px, 140svw, 180px);
+  width: auto;
+  height: auto;
+  display: block;
 }
 
-@media (max-width: 768px) {
-  .experience {
-    padding: 4rem 1rem;
+/* ============================================
+   TABLET (768px+)
+   ============================================ */
+@media (min-width: 768px) {
+  .experienceSection {
+    padding: clamp(4rem, 6vw, 6rem) clamp(1.5rem, 5vw, 3rem) clamp(2rem, 4vw, 2rem);
   }
 
   .carouselContent {
-    gap: 1.5rem;
+    gap: clamp(2rem, 4vw, 6rem);
   }
 
-  .arrowButton {
-    width: 2.5rem;
-    height: 2.5rem;
+  .logoItem {
+    min-width: 80px;
+  }
+}
+
+/* ============================================
+   DESKTOP (1024px+)
+   ============================================ */
+@media (min-width: 1024px) {
+  .titleContainer {
+    margin-left: 13rem;
+  }
+
+  .logoItem:hover {
+    transform: scale(1.15);
   }
 }

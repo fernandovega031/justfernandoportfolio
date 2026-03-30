@@ -1,11 +1,14 @@
 .hero {
+  /* Mobile-first: minimal padding */
   padding: 8rem 1.5rem 6rem;
+  position: relative;
+
 }
 
 /* Gradient layer */
 .gradient {
   position: absolute;
-  top: -40%;
+  top: -50%;
   left: 0%;
   width: 100%;
   height: 60%;
@@ -25,44 +28,52 @@
 }
 
 .container {
+  padding-right: 0.2rem;
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
 .title {
-  font-size: clamp(2rem, 6svw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-wrap: balance;
+  z-index: 13;
 }
 
 .underline {
   display: inline-block;
-  min-width: 220px;
+  min-width: clamp(150px, 80vw, 220px);
+  max-width: 100%;
   text-align: center;
   text-decoration: underline;
   text-decoration-color: #000000;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 8px;
+  text-decoration-thickness: clamp(2px, 0.5vw, 4px);
+  text-underline-offset: clamp(4px, 1vw, 8px);
+  word-wrap: break-word;
 }
 
 .tags {
-
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: clamp(0.5rem, 2vw, 1rem);
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-bottom: clamp(4rem, 8vw, 10rem);
 }
 
 .tags > span {
-  padding: 0.5rem 1rem;
+  padding: clamp(0.35rem, 1vw, 0.5rem) clamp(0.7rem, 2vw, 1rem);
   border-radius: 0.1rem;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: clamp(0.875rem, 2.5vw, 1.25rem);
   transition: all 0.3s ease;
+  /* Ensure touch target minimum 44px on mobile */
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tags > span:hover {
@@ -95,18 +106,18 @@
   margin: 0 auto;
   /* Added overflow hidden to contain stripes */
   overflow: hidden;
+  display: none;
 }
 
 .mockupsContainer {
-  
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Reduced gap between phones */
-  gap: 3rem;
+  /* Mobile-first: minimal gap to prevent overflow */
+  gap: clamp(0.5rem, 2vw, 3rem);
   position: relative;
-  /* Added padding for better spacing */
-  padding: 3rem 0 0 0;
+  padding: clamp(1.5rem, 3vw, 3rem) 0 0 0;
+  flex-wrap: wrap;
 }
 
 /* Updated stripe styling for diagonal blue lines */
@@ -167,7 +178,7 @@ background-color: white;
 }
 
 .phoneCenter {
-  padding-top: 3rem;
+  padding-top: clamp(0, 2vw, 3rem);
   width: clamp(8rem, 15vw, 16rem);
   z-index: 3;
 }
@@ -194,17 +205,41 @@ background-color: white;
 
 /* Removed old phone content styles that are no longer needed */
 
-@media (max-width: 768) {
+/* Tablet and up: optimize layout */
+@media (min-width: 768px) {
   .hero {
-    padding: 6rem 1rem 4rem;
+    padding: 5rem 1.5rem 4rem;
   }
 
-  .stripe {
-    width: 5rem;
-    height: 20rem;
+  .mockupsWrapper{
+    display: block;
+  }
+  .mockupsContainer {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .tags {
+    margin-bottom: clamp(3rem, 5vw, 4rem);
+  }
+}
+
+/* Desktop: full experience */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 8rem 1.5rem 6rem;
+  }
+
+    .mockupsWrapper{
+    display: block;
   }
 
   .mockupsContainer {
-    gap: 0.25rem;
+    gap: 3rem;
+    padding: 3rem 0 0 0;
+  }
+
+  .phoneCenter {
+    padding-top: 3rem;
   }
 }

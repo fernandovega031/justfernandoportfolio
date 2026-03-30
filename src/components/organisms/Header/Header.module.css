@@ -1,3 +1,8 @@
+/* ========================================
+   HEADER - Mobile-First Responsive Design
+   ======================================== */
+
+/* Base Styles (Mobile) */
 .header {
   position: sticky;
   top: 0;
@@ -6,72 +11,322 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
-  padding: 1.2rem 3rem;
+  /* Mobile-first padding: responsive with clamp() */
+  padding: clamp(0.75rem, 5%, 1.5rem) clamp(1rem, 5%, 2rem);
   transition: all 0.4s ease;
 
   background: transparent;
+  gap: clamp(0.5rem, 3%, 1.5rem);
 }
 
-/* Estado cuando haces scroll */
+/* State when scrolling */
 .scrolled {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.themeBtn {
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: opacity .2s ease;
-    opacity: 0;
-}
-.themeBtn:hover {
-    background: rgba(0,0,0, 0.07);
-}
-
+/* ========================================
+   LOGO CONTAINER
+   ======================================== */
 .logoContainer {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-
-
-.logo {
-font-size: 22px;
-font-weight: 700;
+  gap: clamp(0.5rem, 3%, 1rem);
+  min-width: fit-content;
 }
 
 .logoFV {
+  /* Responsive image sizing */
+  width: clamp(2.5rem, 8vw, 4rem);
+  height: auto;
+  aspect-ratio: 1;
   object-fit: contain;
+  display: block;
 }
 
-.logoContainer {
+.logo {
+  /* Fluid typography using clamp() */
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ========================================
+   DESKTOP NAVIGATION
+   ======================================== */
+.nav {
+  display: none;
+  gap: 0;
+}
+
+.navLink {
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+  /* Touch target: min 44px height */
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.navLink:hover {
+  color: #0077ff;
+}
+
+.navLink:focus-visible {
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ========================================
+   THEME TOGGLE BUTTON
+   ======================================== */
+.themeBtn {
+  background: transparent;
+  border: none;
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Touch target: min 44px */
+  width: clamp(2.5rem, 10vw, 3rem);
+  height: clamp(2.5rem, 10vw, 3rem);
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.themeBtn:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.themeBtn:focus-visible {
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
+}
+
+/* ========================================
+   MOBILE MENU TOGGLE (HAMBURGER)
+   ======================================== */
+.menuToggle {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+
+
+  /* Touch target: min 44px */
+  width: clamp(2.5rem, 10vw, 3rem);
+  height: clamp(2.5rem, 10vw, 3rem);
+  justify-content: center;
+  align-items: center;
+  gap: 0.375rem;
+
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+
+.menuToggle:focus-visible {
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.hamburger {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -0.7rem;
+}
+
+.hamburger::after {
+  bottom: -0.7rem;
+}
+
+/* ========================================
+   MOBILE NAVIGATION
+   ======================================== */
+.mobileNav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  padding: clamp(0.75rem, 5%, 1.5rem) clamp(1rem, 5%, 2rem);
+  z-index: 99;
+}
+
+.mobileNavLink {
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: clamp(0.75rem, 3%, 1rem) 0;
+
+  /* Touch target: min 44px height */
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.mobileNavLink:hover {
+  color: #0077ff;
+}
+
+.mobileNavLink:focus-visible {
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
+}
+
+/* ========================================
+   TABLET BREAKPOINT (768px)
+   ======================================== */
+@media (min-width: 768px) {
+  .header {
+    flex-wrap: nowrap;
+    padding: clamp(0.75rem, 4%, 1.5rem) clamp(1rem, 6%, 3rem);
+    gap: clamp(1rem, 5%, 2rem);
+  }
+
+  .nav {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    gap: clamp(1rem, 3vw, 2rem);
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .navLink {
+    padding: 0.5rem clamp(0.25rem, 1.5vw, 0.75rem);
+    font-size: clamp(0.9rem, 2vw, 1rem);
+  }
+
+  /* Hide mobile menu toggle */
+  .menuToggle {
+    display: none;
+  }
+
+  /* Hide mobile menu */
+  .mobileNav {
+    display: none;
+  }
 }
 
+/* ========================================
+   DESKTOP BREAKPOINT (1024px)
+   ======================================== */
+@media (min-width: 1024px) {
+  .header {
+    padding: clamp(1rem, 2.5%, 1.5rem) clamp(2rem, 8%, 4rem);
+    gap: clamp(1rem, 4%, 3rem);
+  }
 
-.nav a {
-margin-left: 24px;
-font-weight: 600;
-color: #333;
-text-decoration: none;
-transition: color .2s ease;
+  .logoContainer {
+    gap: clamp(0.75rem, 2vw, 1.25rem);
+    min-width: auto;
+  }
+
+  .nav {
+    gap: clamp(1.5rem, 2vw, 3rem);
+  }
+
+  .navLink {
+    padding: 0.5rem clamp(0.5rem, 1.5vw, 1rem);
+    font-size: 1rem;
+  }
+
+  .themeBtn {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
 }
 
+/* ========================================
+   DARK MODE SUPPORT
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+  .header {
+    color: #f0f0f0;
+  }
 
-.nav a:hover {
-color: #0077ff;
+  .scrolled {
+    background: rgba(30, 30, 30, 0.85);
+  }
+
+  .logo {
+    color: #3c3c3c;
+  }
+
+  .navLink {
+    color: #3c3c3c;
+  }
+
+  .navLink:hover {
+    color: #4da6ff;
+  }
+
+  .themeBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    
+    background-color: #333;
+  }
+
+  .mobileNav {
+    background: rgba(232, 232, 232, 0.95);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .mobileNavLink {
+    color: #3c3c3c;
+  }
+
+  .mobileNavLink:hover {
+    color: #4da6ff;
+  }
 }

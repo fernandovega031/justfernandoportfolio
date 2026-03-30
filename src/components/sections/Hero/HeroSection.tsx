@@ -88,6 +88,7 @@ const HeroSection: React.FC = () => {
                 src={left3}
                 alt="Burger app mockup"
                 className={styles.phoneImage}
+                loading="lazy"
               />
             </div>
 
@@ -96,6 +97,7 @@ const HeroSection: React.FC = () => {
                 src={left2}
                 alt="Lessons app mockup"
                 className={styles.phoneImage}
+                loading="lazy"
               />
             </div>
 
@@ -104,14 +106,16 @@ const HeroSection: React.FC = () => {
                 src={left1}
                 alt="Real estate app mockup"
                 className={styles.phoneImage}
+                loading="lazy"
               />
             </div>
 
             <div className={`${styles.phone} ${styles.phoneCenter}`}>
               <img
                 src={centralPhone}
-                alt="ASLingo app mockup"
+                alt="ASLingo app mockup - Main feature"
                 className={styles.phoneImage}
+                loading="eager"
               />
             </div>
 
@@ -120,6 +124,7 @@ const HeroSection: React.FC = () => {
                 src={right1}
                 alt="Furniture app mockup"
                 className={styles.phoneImage}
+                loading="lazy"
               />
             </div>
 
@@ -128,6 +133,7 @@ const HeroSection: React.FC = () => {
                 src={right2}
                 alt="Social feed app mockup"
                 className={styles.phoneImage}
+                loading="lazy"
               />
             </div>
 
@@ -136,6 +142,7 @@ const HeroSection: React.FC = () => {
                 src={right3}
                 alt="Menu list app mockup"
                 className={styles.phoneImage}
+                loading="lazy"
               />
             </div>
 

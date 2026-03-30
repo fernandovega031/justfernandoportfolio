@@ -1,140 +1,265 @@
+/* ============================================
+   Mobile-First Responsive Approach
+   ============================================ */
+
 .aboutSection {
-  padding: 1rem 1.5rem 6rem 1.5rem;
+  padding: clamp(1rem, 5%, 2rem) clamp(1rem, 5%, 3rem);
+  padding-bottom: clamp(3rem, 8%, 6rem);
   background-color: #f9fafb;
-}
-
-.titleContainer {
-margin-left: 15rem;
-}
-
-.title {
-  font-size: 2.25rem;
-  font-weight: 600;
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  letter-spacing: 0.3rem;
-}
-
-.titleBar {
-  width: 0.5rem;
-  height: 3rem;
-  background-color: #3b82f6;
 
 }
-
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  width: 100%;
 }
+
+/* ============================================
+   TITLE SECTION
+   ============================================ */
+
+.titleContainer {
+  margin-bottom: clamp(2rem, 5%, 4rem);
+  padding: 0 clamp(0.5rem, 3%, 1.5rem);
+}
+
+.title {
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+  font-weight: 600;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(0.5rem, 2%, 1rem);
+  letter-spacing: 0.3rem;
+  color: #1f2937;
+}
+
+.titleBar {
+  width: 0.5rem;
+  height: clamp(2rem, 4vw, 3rem);
+  background-color: #3b82f6;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   MAIN GRID - Mobile-First
+   ============================================ */
 
 .grid {
-  padding: 0 0 0 15rem ;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0rem;
-  align-items: center;
+  gap: clamp(2rem, 6%, 3rem);
+  align-items: start;
+  padding: 0 clamp(0.5rem, 3%, 1.5rem);
 }
 
+/* Tablet and up - Two column layout */
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-    gap: 0rem;
+    gap: clamp(2rem, 5%, 3rem);
+    align-items: center;
   }
 }
 
+/* Desktop - More generous spacing */
+@media (min-width: 1024px) {
+  .grid {
+    gap: clamp(3rem, 6%, 4rem);
+  }
+}
+
+/* ============================================
+   TEXT CONTENT
+   ============================================ */
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 3%, 2rem);
+}
+
 .subtitle {
-  font-size: 3.25rem;
+  font-size: clamp(1.75rem, 5vw, 3.25rem);
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin: 0;
   text-wrap: balance;
   color: #1f2937;
+  line-height: 1.2;
 }
 
 .description {
   color: #4b5563;
   line-height: 1.75;
-  margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  margin: 0;
+  max-width: 100%;
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #1e3a5f;
   color: white;
-  padding: 0.875rem 2.5rem;
+  padding: clamp(0.75rem, 2%, 1rem) clamp(1.5rem, 4%, 2.5rem);
   border-radius: 0.375rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  border: none;
+  cursor: pointer;
+  min-height: 44px; /* Accessible touch target */
+  min-width: 44px;
+  width: fit-content;
 }
 
 .button:hover {
   background-color: #2d5082;
+  transform: translateY(-2px);
 }
 
-/* Updated photo container to work with SVG borders */
+.button:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   PHOTO SECTION
+   ============================================ */
+
 .photoWrapper {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .photoContainer {
   position: relative;
-    width: 100%;
-  max-width: 450px;
-  max-height: 430px;
+  width: 100%;
+  max-width: clamp(200px, 90%, 450px);
   aspect-ratio: 330 / 424;
 }
 
+/* Decorative lines - responsive sizing */
 .bluelines,
 .redlines {
   position: absolute;
-  width: 20rem;
-  height: 26rem;
+  width: 100%;
+  height: 100%;
+  max-width: clamp(180px, 85%, 320px);
+  max-height: clamp(230px, 110%, 414px);
   pointer-events: none;
   z-index: 2;
-    object-fit: cover;
+  object-fit: contain;
 }
 
-.bluelines{
-  top: 0%;
-  left: 0%;
+.bluelines {
+  top: -15%;
+  left: 10%;
   animation: float 4s ease-in-out infinite;
 }
+
 .redlines {
-  top: 1%;
-  left: 4%;
+  top: -13%;
+  left: 13%;
   animation: float 5s ease-in-out infinite;
 }
 
-
-.photo {
-  position: absolute;
-  top: 47%;
-  left: 34%;
-  transform: translate(-50%, -50%);
-    object-fit: cover;
-  z-index: 1;
-}
-
+/* Profile photo - responsive and centered */
 .photoGuy {
-  width: 20rem;
-  height: 27.5rem;
-  object-fit: cover;
-   z-index: 1;
+  position: absolute;
+  width: 100%;
+  max-width: clamp(160px, 75%, 300px);
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  z-index: 1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* Float animation for decorative elements */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(clamp(-3px, -1vw, -8px));
+  }
+}
+
+/* ============================================
+   Tablet (768px+)
+   ============================================ */
+
+@media (min-width: 768px) {
+  .bluelines,
+  .redlines {
+    max-width: clamp(240px, 55%, 360px);
+    max-height: clamp(300px, 65%, 414px);
+  }
+
+  .photoGuy {
+    max-width: clamp(180px, 50%, 280px);
+  }
+}
+
+/* ============================================
+   Desktop (1024px+)
+   ============================================ */
+
+@media (min-width: 1024px) {
+  .photoContainer {
+    max-width: 450px;
+  }
+
+  .bluelines,
+  .redlines {
+    
+    max-width: 320px;
+    max-height: 414px;
+  }
+
+    
+  .redlines {
+    
+    top: 5%;
+    left: 8%;
+  }
+
+    .bluelines {
+    
+    top: 2%;
+    left: 6%;
+  }
+
+  .photoGuy {
+    top: 38%;
+    left: 40%;
+    max-width: 300px;
+  }
+}
+
+/* ============================================
+   Large Desktop (1440px+)
+   ============================================ */
+
+@media (min-width: 1440px) {
+  .titleContainer {
+    margin-bottom: 4rem;
+    margin-left: 5rem;
+  }
+
+  .grid {
+    gap: 4rem;
+    margin-left: 5rem;
   }
 }
