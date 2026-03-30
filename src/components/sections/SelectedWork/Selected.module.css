@@ -158,6 +158,11 @@
     bottom: -5%;
     left: -33%;
   }
+
+  .titleContainer {
+  margin-left: 14rem;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+}
   
   .projectCard:nth-child(1) {
     z-index: 4;
