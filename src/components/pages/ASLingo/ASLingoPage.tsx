@@ -53,8 +53,7 @@ const slides: React.FC[] = [
   TypographySection,
   OutcomesSection,
   MockupsSection,
-  LessonSection,
-  FooterSection
+  LessonSection
 ]
 
 

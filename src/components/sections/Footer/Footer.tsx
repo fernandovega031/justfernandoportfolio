@@ -40,7 +40,7 @@ const FooterSection: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className={styles.link}>
+                <Link to="/projects" className={styles.link}>
                   Projects
                 </Link>
               </li>

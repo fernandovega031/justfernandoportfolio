@@ -24,7 +24,7 @@ import outcomes from '@/assets/MySpace/outcomes.png';
 import lesson from '@/assets/MySpace/lesson.png';
 
 
-import FooterSection from '@/components/sections/Footer/Footer';
+
 
 
 const MySpacePage: React.FC = () => {
@@ -54,9 +54,6 @@ return (
           />
         );
       })}
-
-
-      <FooterSection />
 
 </>
 );

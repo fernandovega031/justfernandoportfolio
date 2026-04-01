@@ -63,7 +63,7 @@ const Header: React.FC = () => {
         <Link to="/" className={styles.navLink}>
           Home
         </Link>
-        <Link to="/" className={styles.navLink}>
+        <Link to="/projects" className={styles.navLink}>
           Projects
         </Link>
         <Link to="/" className={styles.navLink}>
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
             <Link to="/" className={styles.mobileNavLink} onClick={handleMenuClose}>
               Home
             </Link>
-            <Link to="/" className={styles.mobileNavLink} onClick={handleMenuClose}>
+            <Link  to="/projects" className={styles.mobileNavLink} onClick={handleMenuClose}>
               Projects
             </Link>
             <Link to="/" className={styles.mobileNavLink} onClick={handleMenuClose}>

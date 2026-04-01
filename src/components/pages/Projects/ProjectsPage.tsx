@@ -1,11 +1,12 @@
 import React from 'react';
-import ProjectsGrid from '../../sections/Projects/ProjectsGrid.tsx';
+
+import ProjectsPreview from '@/components/sections/Projects/ProjectsPreview.tsx';
 
 
 const ProjectsPage: React.FC = () => {
 return (
 <main>
-<ProjectsGrid />
+<ProjectsPreview />
 </main>
 );
 };

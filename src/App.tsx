@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/organisms/Header/Header.tsx';
 import HomePage from './components/pages/Home/HomePage.tsx';
-import ProjectsPage from './components/pages/Projects/ProjectsPage.tsx';
 import ContactPage from './components/pages/Contact/ContactPage.tsx';
 import { motion } from 'framer-motion';
 import { useTheme } from './context/ThemeContext.tsx';
@@ -13,6 +12,8 @@ import EverestRedesign from './components/pages/EverestRedesign/EverestRedesign.
 import MySpacePage from './components/pages/MySpace/MySpacePage.tsx';
 import TruckBurgerPage from './components/pages/TruckBurger/TruckBurger.tsx';
 import GalleryPage from './components/pages/Gallery/GalleryPage.tsx';
+import ProjectsPreview from './components/sections/Projects/ProjectsPreview.tsx';
+import Footer from './components/sections/Footer/Footer.tsx';
 
 
 
@@ -36,15 +37,17 @@ return (
     <ScrollToTop />
   <Routes>
   <Route path="/" element={<HomePage />} />
-  <Route path="/projects" element={<ProjectsPage />} />
+  <Route path="/projects" element={<ProjectsPreview />} />
   <Route path="/contact" element={<ContactPage />} />
    <Route path="/ASLingo" element={<ASLingoPage />} />
    <Route path="/TruckBurger" element={<TruckBurgerPage />} />
    <Route path="/MySpace" element={<MySpacePage />} />
    <Route path="/gallery" element={<GalleryPage />} />
    <Route path="/EverestRedesign" element={<EverestRedesign />} />
+
   </Routes>
  </main>
+ <Footer />
 </motion.div>
 </BrowserRouter>
 );

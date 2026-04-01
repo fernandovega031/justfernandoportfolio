@@ -25,8 +25,7 @@ KeyDecisionSection,
 EmotionalIntentSection,
 DevicesShowcaseSection,
 FinalResultSection,
-keyLearning,
-FooterSection
+keyLearning
 
 ]
 
