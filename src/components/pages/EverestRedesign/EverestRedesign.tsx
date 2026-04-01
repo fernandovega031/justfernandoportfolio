@@ -12,7 +12,6 @@ import ThumbnailSection from '@/components/sections/EverestRedesign/Thumbnail';
 import FinalResultSection from '@/components/sections/EverestRedesign/FinalResult';
 import EmotionalIntentSection from '@/components/sections/EverestRedesign/EmotionalIntent';
 import BeforeAfterSection from '@/components/sections/EverestRedesign/BeforeAfter';
-import FooterSection from '@/components/sections/Footer/Footer';
 
 const slides: React.FC[] = [
 ThumbnailSection,

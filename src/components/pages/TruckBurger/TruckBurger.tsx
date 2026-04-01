@@ -17,7 +17,6 @@ import typo from '@/assets/TruckBurger/Typography.png';
 import color from '@/assets/TruckBurger/Color.png';
 import outcomes from '@/assets/TruckBurger/Outcomes.png';
 import thanks from '@/assets/TruckBurger/Thanks.png';
-import FooterSection from '@/components/sections/Footer/Footer';
 
 
 const TruckBurgerPage: React.FC = () => {

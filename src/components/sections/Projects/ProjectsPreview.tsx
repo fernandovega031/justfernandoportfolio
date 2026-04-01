@@ -1,14 +1,10 @@
 import styles from "./ProjectsPreview.module.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import RotatingCarousel from "@/components/molecules/Carousel/RotatingCarousel";
 
-
-
-
-  const containerVariants = {
+const containerVariants = {
   hidden: {},
   visible: {
     transition: {
@@ -17,21 +13,8 @@ import RotatingCarousel from "@/components/molecules/Carousel/RotatingCarousel";
   },
 };
 
-const itemVariants = {
-  hidden: {
-    opacity: 0,
-    y: 40,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6 },
-  },
-};
-
-const ProjectPreview: React.FC = () => {     
+const ProjectPreview: React.FC = () => {
   const controls = useAnimation();
-
   const { ref, inView } = useInView({
     threshold: 0.25,
     triggerOnce: true,
@@ -42,35 +25,52 @@ const ProjectPreview: React.FC = () => {
       controls.start("visible");
     }
   }, [inView, controls]);
+
+  const handleLearnMore = () => {
+    // Scroll to projects or navigate to projects page
+    const projectsSection = document.getElementById('projects-section');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <motion.section className={styles.projectPreview} variants={containerVariants} initial="hidden" animate={controls} ref={ref}>
-
-   
+    <motion.section
+      className={styles.projectPreview}
+      variants={containerVariants}
+      initial="hidden"
+      animate={controls}
+      ref={ref}
+      aria-label="Featured projects showcase"
+    >
       {/* Header Section */}
-      <div className={styles.header}>
-
-        
+      <header className={styles.header}>
         <h1 className={styles.title}>
           Big collections.<br />
           Chill, take your time.
         </h1>
-        
+
         <div className={styles.buttonGroup}>
-          <button className={styles.buttonPrimary}>
-            <a href="https://www.linkedin.com/in/fernandovega031" target="_blank" rel="noopener noreferrer">
-              Connect
-            </a>
-          </button>
-          <button className={styles.buttonSecondary}>
+          <a
+            href="https://www.linkedin.com/in/fernandovega031"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.buttonPrimary}
+            aria-label="Connect on LinkedIn"
+          >
+            Connect
+          </a>
+          <button
+            className={styles.buttonSecondary}
+            onClick={handleLearnMore}
+            aria-label="Learn more about projects"
+          >
             Learn more
           </button>
         </div>
-      </div>
+      </header>
 
       <RotatingCarousel />
-
-
-
     </motion.section>
   );
 };

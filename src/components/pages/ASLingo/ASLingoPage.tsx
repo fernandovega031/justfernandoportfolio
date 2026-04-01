@@ -34,7 +34,6 @@ import MockupsSection from '@/components/sections/ASLingo/mockups';
 
 import LessonSection from '@/components/sections/ASLingo/lesson';
 
-import FooterSection from '@/components/sections/Footer/Footer';
 
 
 
