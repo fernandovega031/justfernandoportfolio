@@ -53,10 +53,10 @@ const RotatingCarousel: React.FC = () => {
 
   // Handle window resize with debounce
   useEffect(() => {
-    let resizeTimer: NodeJS.Timeout;
+    let resizeTimer: ReturnType<typeof setTimeout> | undefined;
 
     const handleResize = () => {
-      clearTimeout(resizeTimer);
+      if (resizeTimer) clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         setViewportWidth(window.innerWidth);
       }, 150);
