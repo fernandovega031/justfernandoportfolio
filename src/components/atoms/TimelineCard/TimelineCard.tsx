@@ -1,4 +1,8 @@
 import styles from "./TimelineCard.module.css";
+import {useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 
 interface TimelineEvent {
   date: string;
@@ -19,10 +23,24 @@ const tagClassMap: Record<string, string> = {
   Launch: styles.tagLaunch,
 };
 
+
 const TimelineCard: React.FC<TimelineCardProps> = ({
   event,
   align,
-}) => {
+}) => {     
+  const controls = useAnimation();
+
+  const { inView } = useInView({
+    threshold: 0.25,
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [inView, controls]);
+
   return (
     <div className={styles.card}>
       <div
@@ -30,10 +48,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       >
         <span className={styles.date}>{event.date}</span>
         {event.tag && (
-          <span
-            className={`${styles.tag} ${tagClassMap[event.tag] ?? styles.tagDefault}`}
-            aria-label={`Category: ${event.tag}`}
-          >
+          <span className={`${styles.tag} ${tagClassMap[event.tag] ?? styles.tagDefault}`}>
             {event.tag}
           </span>
         )}
