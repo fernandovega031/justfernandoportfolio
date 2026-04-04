@@ -66,7 +66,7 @@ const Header: React.FC = () => {
         <Link to="/projects" className={styles.navLink}>
           Projects
         </Link>
-        <Link to="/" className={styles.navLink}>
+        <Link to="/about" className={styles.navLink}>
           About me
         </Link>
         <Link to="/" className={styles.navLink}>

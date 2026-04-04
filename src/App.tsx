@@ -14,7 +14,7 @@ import TruckBurgerPage from './components/pages/TruckBurger/TruckBurger.tsx';
 import GalleryPage from './components/pages/Gallery/GalleryPage.tsx';
 import ProjectsPreview from './components/sections/Projects/ProjectsPreview.tsx';
 import Footer from './components/sections/Footer/Footer.tsx';
-
+import AboutMePage from './components/pages/AboutMePage/AboutMePage.tsx';
 
 
 
@@ -37,6 +37,7 @@ return (
     <ScrollToTop />
   <Routes>
   <Route path="/" element={<HomePage />} />
+    <Route path="/about" element={<AboutMePage />} />
   <Route path="/projects" element={<ProjectsPreview />} />
   <Route path="/contact" element={<ContactPage />} />
    <Route path="/ASLingo" element={<ASLingoPage />} />

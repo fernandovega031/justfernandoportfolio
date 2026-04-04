@@ -1,0 +1,121 @@
+
+
+.HeroSection {
+
+    display: flex;
+    
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 5%;
+
+
+    background-image: url('@/assets/bg.gif');
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+  }
+
+  .TextContainer {
+    margin-left: 40px;
+    max-width: 1200px;
+    margin-bottom: 30px;
+    padding-right: 280px;
+  }
+  
+  .NameLine{
+    display: flex;
+        align-items: center;
+        gap: 20px;
+  }
+  
+  .theLine {
+  
+    width: 60px;
+    border-top: 2px solid #000;
+    box-sizing: border-box;
+  
+  }
+  
+  .NameUser {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .TitleUser {
+    font-size: clamp(28px, 3vw, 58px);
+    color: black;
+  }
+  
+  .DescriptionUser {
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: bold;
+    color: #434343;
+  }
+
+  @media (max-width: 1024px) {
+    .HeroSection {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+        background-size: cover;
+    }
+
+    .TextContainer {
+        margin-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .TitleUser {
+        font-size: 42px;
+    }
+
+    .DescriptionUser {
+        font-size: 14px;
+    }
+}
+
+
+  @media (max-width: 768px) {
+    .HeroSection {
+        flex-direction: column;
+        align-items: center;
+ 
+        text-align: center;
+        padding: 15px;
+        background-size: cover;
+    }
+
+    .NameUser {
+      font-size: 24px;
+
+    }
+
+    .TextContainer {
+        padding: 0 10px;
+        margin-left: 0px;
+    }
+
+    .NameLine {
+
+        justify-content: center; /* Center elements */
+        gap: 10px;
+    }
+
+    .theLine {
+      display: none;
+        width: 40px;
+        border-top: 1.5px solid #000;
+    }
+
+    .TitleUser {
+        font-size: 32px;
+    }
+
+    .DescriptionUser {
+      margin-top: 10px;
+        font-size: 14px;
+    }
+}

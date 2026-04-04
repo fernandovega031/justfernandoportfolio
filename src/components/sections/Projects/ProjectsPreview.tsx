@@ -3,6 +3,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from 'react';
 import RotatingCarousel from "@/components/molecules/Carousel/RotatingCarousel";
+import FadeInSection from "@/components/Animations/FadeInSection";
+
 
 const containerVariants = {
   hidden: {},
@@ -43,6 +45,8 @@ const ProjectPreview: React.FC = () => {
       ref={ref}
       aria-label="Featured projects showcase"
     >
+  
+  <FadeInSection>
       {/* Header Section */}
       <header className={styles.header}>
         <h1 className={styles.title}>
@@ -71,6 +75,8 @@ const ProjectPreview: React.FC = () => {
       </header>
 
       <RotatingCarousel />
+
+      </FadeInSection>
     </motion.section>
   );
 };
