@@ -23,6 +23,12 @@ const SelectedWorkSection: React.FC = () => {
   const projects: Project[] = useMemo(
     () => [
       {
+        name: "Everest Redesign",
+        thumbnail: EverestRedesignThumbnail,
+        isHighlighted: false,
+        linkTo: "/EverestRedesign",
+      },
+      {
         name: "ASLingo",
         thumbnail: ASLingoThumbnail,
         isHighlighted: true,
@@ -33,12 +39,6 @@ const SelectedWorkSection: React.FC = () => {
         thumbnail: MySpaceThumbnail,
         isHighlighted: false,
         linkTo: "/MySpace",
-      },
-      {
-        name: "Everest Redesign",
-        thumbnail: EverestRedesignThumbnail,
-        isHighlighted: false,
-        linkTo: "/EverestRedesign",
       },
       {
         name: "Truck Burger",
